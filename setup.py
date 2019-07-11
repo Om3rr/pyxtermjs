@@ -3,7 +3,7 @@
 
 import sys
 
-if sys.version_info < (3, 6, 0):
+if sys.version_info < (3, 5, 0):
     print("Python 3.6+ is required")
     exit(1)
 import io  # noqa E402
@@ -59,7 +59,7 @@ setup(
     entry_points={"console_scripts": ["pyxtermjs = pyxtermjs.app:main"]},
     extras_require={},
     zip_safe=False,
-    python_requires=">=3.6",
+    python_requires=">=3.5",
     install_requires=["flask-socketio>=3.0, <=4.0"],
     classifiers=[
         "Operating System :: OS Independent",
