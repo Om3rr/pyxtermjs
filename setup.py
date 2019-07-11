@@ -14,7 +14,7 @@ from typing import List  # noqa E402
 import ast  # noqa E402
 import re  # noqa E402
 
-CURDIR = Path(__file__).parent
+CURDIR = str(Path(__file__).parent)
 
 EXCLUDE_FROM_PACKAGES = ["tests"]
 
